@@ -19,21 +19,18 @@ surface_resize(application_surface, 1920, 1080);
 window_set_size(1920,1080);
 window_set_fullscreen(true);
 
-if(mouse_check_button(mb_right))
+if(x>room_width){
 if (room==room1)
    {
    room_goto(room0);
    }
-if(room==room0){
-surface_resize(application_surface, 1920, 1080);
-window_set_size(1920,1080);
-
 }
-if(keyboard_check(vk_enter))
-if (room==room1)
+if(x<0)
+{if (room==room1)
    {
    room_goto(room2);
    }
+}
 if(room==room2){
 surface_resize(application_surface, 1920, 1080);
 window_set_size(1920,1080);
