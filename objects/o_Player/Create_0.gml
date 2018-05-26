@@ -15,3 +15,4 @@ anim_speed = 0; //This translates to animating at 8 frames per second (fps) but 
 firing_delay=0;
 hurt=0;
 pause=0;
+dash_counter = 0;
