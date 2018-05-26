@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(HP<=0){
+global.dash=1;
 instance_destroy();
 room_goto(room1);
 }
