@@ -1,0 +1,40 @@
+vsp=vsp+grv;
+if(place_meeting(x+15,y-100,o_Wall))
+{
+	move*=-1;
+}
+if(place_meeting(x-15,y-100,o_Wall))
+{
+	move*=1;
+}
+if(place_meeting(x,y,o_Wall))
+{
+	vsp=0;
+}
+if(!place_meeting(x+100,y+51,o_Wall))
+{
+	move*=-1;
+}
+if(!place_meeting(x-100,y+51,o_Wall))
+{
+	move*=-1;
+}
+if(hurt==1){
+++movesp;
+if(movesp==60)
+{
+	movesp=0;
+	hurt=0;
+}
+}
+
+y=y+vsp;
+x=x+walksp*move;
+if(hurt==1)
+	{
+	if((movesp>=0&&movesp<=10)||(movesp>=20&&movesp<=30)||(movesp>=40&&movesp<=50))
+	{alpha=0;}
+	else{alpha=1;}
+	}
+	else {alpha=1;}
+
